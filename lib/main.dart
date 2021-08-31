@@ -22,7 +22,6 @@ class MyApp extends StatelessWidget {
               child: Text('Container 1'),
             ),
             Container(
-                margin: new EdgeInsets.all(55.00),
                 color: Colors.teal,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
