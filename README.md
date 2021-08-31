@@ -1,6 +1,8 @@
 # mi_card_flutter
 
-A new Flutter application.
+### Contains a branch dedicated to CrossAxisAlignment vs. VerticalAxisAlignment
+
+A new Flutter application based on [Mi Card](https://github.com/londonappbrewery/mi_card_flutter)
 
 ## Getting Started
 
