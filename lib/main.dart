@@ -10,42 +10,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        appBar: AppBar(title: Text('MainAxis-CrossAxis-Alignment')),
+        backgroundColor: Colors.white,
         body: SafeArea(
-            child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Container(
-              width: 100,
-              color: Colors.red,
-              height: double.infinity,
-              child: Text('Container 1'),
-            ),
-            Container(
-                margin: new EdgeInsets.all(55.00),
-                color: Colors.teal,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 100,
-                      height: 100,
-                      color: Colors.white,
-                    ),
-                    Container(
-                      width: 100,
-                      height: 100,
-                      color: Colors.green,
-                    ),
-                  ],
-                )),
-            Container(
-              width: 100,
-              height: double.infinity,
-              color: Colors.blue,
-              child: Text('Container 3'),
-            ),
-          ],
+            child: Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              // Container(width: 50, height: 50, color: Colors.red),
+              Container(width: 50, height: 150, color: Colors.red),
+              // Container(width: 50, height: 50, color: Colors.blue),
+              Container(width: 50, height: 100, color: Colors.blue),
+              // Container(width: 50, height: 50, color: Colors.green),
+              Container(width: 50, height: 75, color: Colors.green),
+              Container(width: 50, height: 50, color: Colors.yellow),
+            ],
+          ),
         )),
       ),
     );
