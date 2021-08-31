@@ -5,6 +5,8 @@ void main() {
   runApp(MyApp());
 }
 
+/// Shows the difference between MainAxis (x, horizontal) vs.
+/// CrossAxis (y, vertical) alignment
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
